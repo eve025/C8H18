@@ -1,0 +1,180 @@
+:root{
+	--bckgrnd-color:gray;
+	--border:#000;
+	--tabla:#fff;
+	--column:#aaaa;
+
+	--MetalAlcalino:#e0b1cb;
+	--tierraAlcalina:#d9a796;
+	--DeTransicion:#d9cf96;
+	--Otros:#b3ccb1;
+	--Metaloides:#e3dc5b;
+	--NoMetales:#8ac5ed;
+	--Halogenos:#eb34e1;
+	--GNobles:#e93461;
+	--Lantanidos:#3d82f8;
+	--Actinidos:#4fc47e;
+	--Desconocidas:#d69cd3;
+
+	/*
+
+
+	sin hover 
+
+
+	*/
+
+
+	--MetalAlcalino1:#f4b1cb;
+	--tierraAlcalina1:#e9a799;
+	--DeTransicion1:#dacfa6;
+	--Otros1:#b3f9b1;
+	--Metaloides1:#e3f251;
+	--NoMetales1:#8aa5fa;
+	--Halogenos1:#ef31c1;
+	--GNobles1:#df3162;
+	--Lantanidos1:#3d42f9;
+	--Actinidos1:#4ffd7e;
+	--Desconocidas1:#ca9ff3;
+}
+			body{
+				background-image:url("https://i.pinimg.com/originals/23/dc/ee/23dceefa034dfbd43cfd71b1d742710d.jpg");
+				font-family:Cambria;
+			}
+			header{font-size:15px;padding:1em;text-align:center;height:70px;
+				/*backdrop-filter:blur(10px);*/
+				background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
+				border-bottom:1px solid var(--border);
+				margin:0 0 5em 0;
+			}
+			/*span{}*/
+			
+			footer{
+				background-color:var(--bckgrnd-color);
+				margin:5em 0 0 0;border-top:1px solid var(--border);
+				display:flex;
+				flex-direction:row;
+				align-items:center;
+				justify-content:space-around;
+			}
+			div{padding:1rem;}
+
+			table{
+				margin:2.5em 0 2.5em 0;
+				border-collapse:collapse;background-color:var(--tabla);
+			}
+			i{
+				color:gray;font-size:12px;
+			}
+			table th , table td{
+				border:1px solid var(--border);
+				font-size:1rem;
+				padding:0.5em;height:1em;width:1em;
+			}
+			th:hover, td:hover{
+				box-shadow:2px 2px 10px gray;
+			}
+			div, table, ol{
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+			}
+				
+			li{list-style-type:none;padding:0.5em;}
+
+			input, button{
+				border-radius:10px;border:1px solid gray;padding:0.5em;width:30vw;
+			}
+			button{
+                background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
+                width:10vw;font-weight:700;
+            }
+            
+            button:hover{
+       background:linear-gradient(to bottom right,#fff,LightBlue,#aaaa);
+            }
+            
+			article{text-align:right;display:relative;top:0;}
+table tr:nth-child(1){
+	background-color:var(--column);
+}
+
+.alcalino:hover{
+	color:var(--MetalAlcalino);
+}
+.tierra:hover{
+	color:var(--tierraAlcalina);
+}
+.transicion:hover{
+	color:var(--DeTransicion);
+}
+.otros:hover{
+	color:var(--Otros);
+}
+.metaloide:hover{
+	color:var(--Metaloides);
+}
+.noM:hover{
+	color:var(--NoMetales);
+}
+
+.halogenos:hover{
+	color:var(--Halogenos);
+}
+.nobles:hover{
+	color:var(--GNobles);
+}
+.lantani:hover{
+	color:var(--Lantanidos);
+}
+.actini:hover{
+	color:var(--Actinidos);
+}
+.unknown:hover{
+	color:var(--Desconocidas);
+}			
+
+
+
+/*
+sin hover
+
+
+*/
+
+
+.alcalino{
+	color:var(--MetalAlcalino1);
+}
+.tierra{
+	color:var(--tierraAlcalina1);
+}
+.transicion{
+	color:var(--DeTransicion1);
+}
+.otros{
+	color:var(--Otros1);
+}
+.metaloide{
+	color:var(--Metaloides1);
+}
+.noM{
+	color:var(--NoMetales1);
+}
+
+.halogenos{
+	color:var(--Halogenos1);
+}
+.nobles{
+	color:var(--GNobles1);
+}
+.lantani{
+	color:var(--Lantanidos1);
+}
+.actini{
+	color:var(--Actinidos1);
+}
+.unknown{
+	color:var(--Desconocidas1);
+}		
