@@ -1192,7 +1192,7 @@ function buscar(){
     else {
         document.write("Elemento invalido, porfavor intente denuevo, no utilice caracteres especiales...");
     }       
-    document.write(`<a href="Periodic table.html" style="background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
+    document.write(`<a href="https://eve025.github.io/C8H18/Periodic%20table.html" style="background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
                 width:50vw;font-weight:700;text-decoration:none;border-radius:10px;border:1px solid #000;
                 padding:0.5em;color:#000;position:relative;top:200px;left:50%;">Regresar</a>`);
     // setTimeout(function(){
