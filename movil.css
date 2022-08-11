@@ -57,7 +57,7 @@
 		flex-direction:column;
 		justify-content:center;
 	}
-@media only screen and (max-width: 800px){
+@media screen and (max-width: 170px){
 	article{
 		text-align:center;
 	}
