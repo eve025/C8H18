@@ -50,8 +50,9 @@
 			/*span{}*/
 			
 			footer{
-				background-color:var(--bckgrnd-color);
-				margin:5em 0 0 0;border-top:1px solid var(--border);
+				background-color:var(--border);
+				border-top:1px solid var(--bckgrnd-color);
+				margin:5em 0 0 0;position:relative;bottom:0;
 				display:flex;
 				flex-direction:row;
 				align-items:center;
@@ -83,19 +84,21 @@
 				
 			li{list-style-type:none;padding:0.5em;}
 
-			input, button{
+			input, button, a{
 				border-radius:10px;border:1px solid gray;padding:0.5em;width:30vw;
 			}
-			button{
+			button, a{
                 background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
                 width:10vw;font-weight:700;
             }
             
-            button:hover{
-       background:linear-gradient(to bottom right,#fff,LightBlue,#aaaa);
+            button:hover, a:hover{
+       			background:linear-gradient(to bottom right,#fff,LightBlue,#aaaa);
             }
             
 			article{text-align:right;display:relative;top:0;}
+
+
 table tr:nth-child(1){
 	background-color:var(--column);
 }
