@@ -1,9 +1,9 @@
-let btn = document.getElementById("boton");
+window.onload = function(){
+    let btn = document.getElementById("boton");
 btn.addEventListener('click',buscar);
 
 function buscar(){
     let element = document.getElementById("name").value;
-
 
     if(element == "H" || element =="Hidrogeno"){
         let numero = "1";
@@ -1192,8 +1192,11 @@ function buscar(){
     else {
         document.write("Elemento invalido, porfavor intente denuevo, no utilice caracteres especiales...");
     }       
-    
+    document.write(`<a href="Periodic table.html" style="background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
+                width:50vw;font-weight:700;text-decoration:none;border-radius:10px;border:1px solid #000;
+                padding:0.5em;color:#000;position:relative;top:200px;left:50%;">Regresar</a>`);
     // setTimeout(function(){
     //     location.href="index.html";}
     //     1000*2);
-}			
+}           
+}
