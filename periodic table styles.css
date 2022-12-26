@@ -38,17 +38,19 @@
 	--Desconocidas1:#ca9ff3;
 }
 			body{
-				background-image:url("https://i.pinimg.com/originals/23/dc/ee/23dceefa034dfbd43cfd71b1d742710d.jpg");
+				padding:0;
+				margin:0;
 				font-family:Cambria;
+				background-image:url("https://i.pinimg.com/originals/23/dc/ee/23dceefa034dfbd43cfd71b1d742710d.jpg");
+				
 			}
-			header{font-size:15px;padding:1em;text-align:center;height:70px;
-				/*backdrop-filter:blur(10px);*/
+			header{
 				background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
+
+				backdrop-filter:blur(10px);text-align:center;
+				font-size:15px;padding:1em;height:70px;
 				border-bottom:1px solid var(--border);
-				margin:0 0 5em 0;
 			}
-			/*span{}*/
-			
 			footer{
 				background-color:var(--border);
 				border-top:1px solid var(--bckgrnd-color);
@@ -62,7 +64,7 @@
 
 			table{
 				margin:2.5em 0 2.5em 0;
-				border-collapse:collapse;background-color:var(--tabla);
+				border-collapse:collapse;background-color:var(--tabla)/*transparent*/;
 			}
 			i{
 				color:gray;font-size:12px;
@@ -83,23 +85,51 @@
 			}
 				
 			li{list-style-type:none;padding:0.5em;}
-
-			input, button, a{
-				border-radius:10px;border:1px solid gray;padding:0.5em;width:30vw;
+			input{
+				border:1px solid gray;width:400px;
 			}
-			button, a{
-                background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
-                width:10vw;font-weight:700;
+			input, button{
+				height:40px;
+				border:none;border-radius:5px;
+			}
+			article{
+				margin-top:3em;
+				text-align:center;
+			}
+			button{
+                background:;
+                width:200px;font-weight:700;padding:0.5em;
+                position:relative;
+                color:;
+                overflow:hidden;
+                cursor:pointer;
+            }
+            button::after{
+            	content:"";
+            	background:var(--column);
+            	width:200px;
+            	height:40px;
+            	position:absolute;
+            	left:0px;
+            	top:-40px;
+            	z-index:1;
+            	transition:.2s ease all;
             }
             
-            button:hover, a:hover{
-       			background:linear-gradient(to bottom right,#fff,LightBlue,#aaaa);
+            button:hover::after{
+            	position:absolute;
+            	left:0px;
+       			top:0px;
+
             }
-            
-			article{text-align:right;display:relative;top:0;}
+            span{
+            	position:relative;
+            	z-index:2;
+            }
 
 
 table tr:nth-child(1){
+	/*display:none;*/
 	background-color:var(--column);
 }
 
