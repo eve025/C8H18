@@ -1,6 +1,25 @@
 window.onload = function(){
+
+//GOOGLE INFORMATION
+    // Get the input field
+var input = document.getElementById("name");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("boton").click();
+  }
+});
+
+//
+
+    //when button is pressed
     let btn = document.getElementById("boton");
-btn.addEventListener('click',buscar);
+    btn.addEventListener('click',buscar);
 
 function buscar(){
     let element = document.getElementById("name").value;
