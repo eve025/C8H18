@@ -42,7 +42,10 @@
 				margin:0;
 				font-family:Cambria;
 				background-image:url("https://i.pinimg.com/originals/23/dc/ee/23dceefa034dfbd43cfd71b1d742710d.jpg");
-				
+				background-size:cover;
+				height:100vh;
+				box-sizing:border-box;
+				overflow-x:hidden;
 			}
 			header{
 				background:linear-gradient(to bottom right,LightBlue,#aaaa, #fff);
@@ -52,6 +55,7 @@
 				border-bottom:1px solid var(--border);
 			}
 			footer{
+				width:100vw;
 				background-color:var(--border);
 				border-top:1px solid var(--bckgrnd-color);
 				margin:5em 0 0 0;position:relative;bottom:0;
@@ -60,11 +64,13 @@
 				align-items:center;
 				justify-content:space-around;
 			}
-			div{padding:1rem;}
+			div{
+				width:100%;}
 
 			table{
-				margin:2.5em 0 2.5em 0;
-				border-collapse:collapse;background-color:var(--tabla)/*transparent*/;
+				margin:2.5em auto;
+				border-collapse:collapse;
+				background-color:var(--tabla)/*transparent*/;
 			}
 			i{
 				color:gray;font-size:12px;
@@ -211,3 +217,18 @@ sin hover
 .unknown{
 	color:var(--Desconocidas1);
 }		
+
+@media screen and (max-width:724px){
+	div{
+		overflow-x:auto;
+	}
+	li{
+		display:inline-block;
+	}
+	/*footer{
+		display:block;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+	}*/
+}
