@@ -6,16 +6,22 @@
 		<link rel="stylesheet" type="text/css" href="periodic table styles.css">
 		<link rel="stylesheet" type="text/css" href="tableStyles.css">
 		<link rel="stylesheet" type="text/css" href="movil.css">
-		
-		<script src="elements.js"></script>
+		<link rel="stylesheet" type="text/css" href="resultadoBusqueda.css">
 	</head>
 	<body>
-		<header><h1>PERIODIC TABLE</h1>
-			<!-- <span>=</span> -->
+		<header>
+			<h1>PERIODIC TABLE</h1>
 		</header>
+		<section class="container_res">
+		<div id="RESULTADO" onmouseleave="out()">
+			<h4 class="h4_res">Resultado inesperado ^o^"</h4>
+			<p class="p_res">Elemento invalido, porfavor intente denuevo, no utilice caracteres especiales...</p>
+			<a href="index.html" class="result">Volver a buscar</a>
+		</div>
+		</section>
 	<article>
 		<input type="text" name="Element" id="name" placeholder="Search element">
-		<button id="boton"><!-- <a id="boton" href="aver sisi.html"> --><span>Search</span><!-- </a> --></button>
+		<button id="boton"><span>Search</span></button>
 	</article>
 		<section>
 			<div>
@@ -274,5 +280,9 @@
 				<li class="unknown">Propiedades quimicas desconocidas</li>
 			</ol>
 		</footer>
+		<!--Developed by @im.haydee 2023-->
 </body>
+<script src="ARRAY OBJ.js" defer></script>
+<!-- <script src="elements.js" defer></script>
+<script src="resultadoBusqueda.js" defer></script> -->
 </html>
